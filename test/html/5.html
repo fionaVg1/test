@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+ let sex = document.forms["myForm"]["boy"].value;
+  if(!sex){
+    alert("Sex must be filled out");
+    return false;
+  }
+  let x = document.forms["myForm"]["fname"].value;
+  if (x == "") {
+    alert("Name must be filled out");
+    return false;
+  }
+ 
+}
+</script>
+</head>
+<body>
+
+<h2>JavaScript Validation</h2>
+
+<form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+  Name: <input type="text" name="fname">
+   性别：<input type="radio" name="boy" value="男">
+   <input type="radio" name="boy" value="女">
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>使用js完成隔行换色</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			ul {
+				width: 600px;
+				list-style: none;
+				margin: 0 auto;
+			}
+			ul li {
+				width: 100%;
+				height: 30px;
+				margin-top: 5px;
+			}
+      li.t1{background-color:#000;}
+      li.t2{background-color:#aaa;}
+		</style>
+    
+		
+	</head>
+	<body>
+		<!--使用javascript实现隔行更换背景颜色，奇数行为#aaa;偶数行为#000；-->
+		<ul>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+    <script  type="application/javascript">
+      console.log('test')
+      var $trs=document.getElementsByTagName("li");
+      for (i=1;i<$trs.length+1;i++) { 
+
+      $trs[i-1].className = (i%2>0)?"t1":"t2"; 
+
+      }
+    </script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="author" content="微普科技 http://www.wiipu.com" />
+		<title>css 边框圆角属性操作</title>
+		<style type="text/css">
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			.wrap {
+				width: 258px;
+				height: 275px;
+				padding: 100px;
+				margin: 20px auto;
+				background-color: #eee;
+			}
+      .opera{
+        background-color: #F22629;
+        border-radius: 50%;
+        padding: 23px 73px;
+      }
+      .opera-top{
+        width: 112px;
+        height: 230px;
+        background-color: #ffffff;
+        border-radius: 50%;
+      }
+		</style>
+	</head>
+	<body>
+		<!--提示：使用css边框圆角属性实现opera浏览器logo，
+		外层椭圆宽258px、高275px、背景颜色#F22629，
+		内层椭圆宽112px、高度230px、背景颜色#ffffff-->
+		<div class="wrap">
+			<!--外层容器-->
+			<div class="opera">
+				<!--内层容器-->
+				<div class="opera-top"></div> 
+			</div>
+		</div>
+	</body>
+</html>
